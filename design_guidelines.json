@@ -1,0 +1,123 @@
+{
+  "project_name": "Coremore Consultancy",
+  "domain": "Business Consultancy",
+  "theme": "dark",
+  "archetype": "Hybrid: 4 (Swiss & High-Contrast) + 5 (Jewel & Luxury)",
+  "vibe": "High-Performance Minimalism, architectural, clean, decisive, unsentimental",
+  "colors": {
+    "background": "#050914",
+    "surface": "#0F172A",
+    "surface_elevated": "#1E293B",
+    "accent_primary": "#2563EB",
+    "accent_hover": "#1D4ED8",
+    "accent_glow": "rgba(37, 99, 235, 0.5)",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_accent": "#60A5FA",
+    "border": "rgba(148, 163, 184, 0.15)"
+  },
+  "typography": {
+    "fonts": {
+      "headers": "Cabinet Grotesk, sans-serif",
+      "body": "EB Garamond, serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter leading-none",
+      "h2": "text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "body_lg": "text-lg sm:text-xl leading-relaxed font-body",
+      "body": "text-base leading-relaxed font-body",
+      "overline": "text-xs font-mono uppercase tracking-[0.2em] text-accent-primary"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_gaps": "gap-8 md:gap-12",
+    "expertise_grid_mode": "The 'Control Room' Grid - grid-cols-1 md:grid-cols-2 lg:grid-cols-4 with tight gaps and sharp edges.",
+    "alignment": "Optical alignment. Left-align text for dense content, explicitly define center-alignments only for Hero and major section titles."
+  },
+  "components": {
+    "navigation": {
+      "style": "Glassmorphism (Crystal Variant)",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#050914]/70 border-b border-white/10 shadow-sm"
+    },
+    "hero": {
+      "style": "Architectural Overlay",
+      "overlay_classes": "absolute inset-0 bg-gradient-to-b from-[#050914]/80 via-[#050914]/60 to-[#050914]",
+      "content_alignment": "Centered, strong typographic hierarchy. H1 must pop."
+    },
+    "expertise_cards": {
+      "style": "Grid Borders (Technical Look)",
+      "classes": "border-r border-b border-white/10 p-8 hover:bg-white/5 transition-colors duration-300",
+      "note": "Strip standard card shadows and radii. Use border-collapse style layout for a 'naked' structural feel."
+    },
+    "methodology_timeline": {
+      "style": "Vertical Pipeline",
+      "description": "A vertical line on the left (or center) connecting nodes. Use framer-motion to fill the line on scroll. Nodes are: Diagnosis -> Structure -> Execution -> Results."
+    },
+    "mid_page_cta": {
+      "style": "Neo-Brutalist Block",
+      "classes": "bg-[#2563EB] text-[#050914] py-32 px-8 flex flex-col items-center justify-center text-center",
+      "typography": "Use pure black/deep navy for text to ensure maximum contrast against the pure blue."
+    },
+    "buttons": {
+      "primary": "bg-[#2563EB] text-white hover:bg-[#1D4ED8] rounded-none px-8 py-4 font-semibold tracking-wide transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]",
+      "secondary": "border border-white/20 text-white hover:bg-white/5 rounded-none px-8 py-4 font-semibold tracking-wide transition-all"
+    }
+  },
+  "media_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop",
+      "alt": "Dark abstract geometric architectural core expanding",
+      "category": "hero"
+    },
+    "expertise_project_management": {
+      "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+      "alt": "Modern architecture structural oversight",
+      "category": "feature"
+    },
+    "expertise_business_turnaround": {
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      "alt": "Data analytics dashboard showing turnaround",
+      "category": "feature"
+    },
+    "founders": [
+      {
+        "name": "Raveena Dhoot",
+        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
+        "alt": "Raveena Dhoot Corporate Portrait"
+      },
+      {
+        "name": "Dhruti Aghera",
+        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
+        "alt": "Dhruti Aghera Corporate Portrait"
+      },
+      {
+        "name": "Rahul Birla",
+        "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop",
+        "alt": "Rahul Birla Corporate Portrait"
+      }
+    ]
+  },
+  "motion_interactions": {
+    "hover_states": "All interactive elements MUST explicitly set text color on hover. Use border color transitions (white/10 to white/30) for subtle lifts.",
+    "scroll_animations": "Use Framer Motion `whileInView` for staggered list reveals and timeline node activation.",
+    "parallax": "Subtle parallax on the hero background image."
+  },
+  "accessibility": {
+    "contrast": "Ensure text over images uses text-shadow or a strong gradient overlay.",
+    "test_ids": "Add `data-testid` to all forms, links, buttons, and methodology nodes. Use kebab-case (e.g., `data-testid=\"hero-cta-button\"`).",
+    "motion": "Respect `prefers-reduced-motion`."
+  },
+  "instructions_to_main_agent": [
+    "Load `Cabinet Grotesk` from Fontshare (CDN) or use a similar system fallback. Load `EB Garamond` from Google Fonts.",
+    "Never use Shadcn default Card components for the Expertise grid. Build it manually with HTML/Tailwind for the 'Grid Borders' architectural look.",
+    "Implement the Methodology section as a visual timeline using framer-motion.",
+    "The Contact form must use customized Shadcn form components, heavily styled to match the dark 'Grid Borders' theme (no default rounded Vercel-look borders, use square corners).",
+    "Use Phosphor Icons (@phosphor-icons/react) for structural/architectural iconography.",
+    "Skip the Case Studies section entirely as requested.",
+    "Images APIs were unavailable; you MUST use the provided Unsplash URLs in the `media_urls` object."
+  ]
+}

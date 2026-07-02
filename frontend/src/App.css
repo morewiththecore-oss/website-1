@@ -1,0 +1,6 @@
+/* Component-local styles intentionally minimal — see index.css for Coremore tokens */
+.App {
+    min-height: 100vh;
+    background-color: var(--cm-bg);
+    color: var(--cm-text);
+}
